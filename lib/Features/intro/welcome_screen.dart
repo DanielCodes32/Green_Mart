@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:green_mart/Features/auth/login_screen.dart';
+import 'package:green_mart/Features/explore/home_screen.dart';
 import 'package:green_mart/cores/constants/app_assets.dart';
 import 'package:green_mart/cores/functions/navigation.dart';
 import 'package:green_mart/cores/styles/app_colors.dart';
 import 'package:green_mart/cores/widgets/main_button.dart';
 import 'package:green_mart/cores/widgets/svg_pic.dart';
 import 'package:green_mart/cores/styles/Text_styles.dart';
-import 'package:green_mart/Features/auth/login_screen.dart';
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
 

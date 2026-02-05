@@ -5,10 +5,10 @@ class TextStyles {
 fontSize: 48,fontFamily: 'Poppins',fontWeight: FontWeight.w600,color: AppColors.whiteColor
   );
    static TextStyle title= TextStyle(
-fontSize: 24,fontFamily: 'Poppins',fontWeight: FontWeight.w600,color: AppColors.whiteColor
+fontSize: 22,fontFamily: 'Poppins',fontWeight: FontWeight.w600,color: AppColors.whiteColor
   );
    static TextStyle body= TextStyle(
-fontSize: 16,fontFamily: 'Poppins',fontWeight: FontWeight.normal,color: AppColors.greyColor
+fontSize: 14,fontFamily: 'Poppins',fontWeight: FontWeight.normal,color: AppColors.greyColor
   );
    static TextStyle button= TextStyle(
 fontSize: 16,fontFamily: 'Poppins',fontWeight: FontWeight.w600,color: AppColors.whiteColor

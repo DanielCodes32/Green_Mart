@@ -6,13 +6,14 @@ class CustomPassField extends StatefulWidget {
   final String hintText;
   final Icon? prefixIcon;
   final String labelText;
-
+ final String? Function(String?)? validator;
   const CustomPassField({
     super.key,
     required this.hintText,
     required this.labelText,
     this.prefixIcon,
-    required this.borderRadius
+    required this.borderRadius,
+    this.validator,
   });
 
   @override
@@ -59,6 +60,7 @@ class _CustomPassFieldState extends State<CustomPassField> {
            borderSide: BorderSide.none,
         ),
       ),
+     validator: widget.validator,
     );
   }
 }

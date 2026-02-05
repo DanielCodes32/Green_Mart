@@ -29,20 +29,15 @@ class _SplashScreenState extends State<SplashScreen> {
     return Scaffold(
       backgroundColor: AppColors.primaryColor,
       body: Align(alignment: Alignment.center,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
+        child: 
             SvgPic(
               assetName: AppAssets.logosvg,
               width: 55,
               height: 64,
               color: AppColors.whiteColor,
             ),
-            SizedBox(width: 10),
-            Text('GreenMart',style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold,color: AppColors.whiteColor),)
             
-          ],
-        ),
+         
       ),
     );
   }
