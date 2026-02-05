@@ -7,38 +7,50 @@ class CustomFormField extends StatelessWidget {
   final Icon? prefixIcon;
   final Icon? suffixIcon;
   final String labelText;
+  final bool? keyType;
   const CustomFormField({
     super.key,
     required this.hintText,
     required this.labelText,
     this.prefixIcon,
     this.suffixIcon,
-    required this.borderRadius
+    required this.borderRadius,
+    this.keyType,
   });
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      keyboardType: keyType == true ? TextInputType.number : TextInputType.text,
       decoration: InputDecoration(
         hintText: hintText,
         prefixIcon: prefixIcon,
         suffixIcon: suffixIcon,
         labelText: labelText,
+        labelStyle: TextStyle(
+      color: AppColors.greyColor,
+      fontSize: 16,
+      fontWeight: FontWeight.bold,
+    ),
+    fillColor: AppColors.accentColor,
+    filled: true,
+
+
         enabledBorder: OutlineInputBorder(
           borderRadius: borderRadius,
-          borderSide: BorderSide(color: AppColors.primaryColor),
+           borderSide: BorderSide.none,
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: borderRadius,
-          borderSide: BorderSide(color: AppColors.primaryColor),
+          borderSide: BorderSide.none,
         ),
         errorBorder: OutlineInputBorder(
           borderRadius: borderRadius,
-          borderSide: BorderSide(color: Colors.red),
+           borderSide: BorderSide.none,
         ),
         focusedErrorBorder: OutlineInputBorder(
           borderRadius: borderRadius,
-          borderSide: BorderSide(color: Colors.red),
+           borderSide: BorderSide.none,
         ),
       ),
     );

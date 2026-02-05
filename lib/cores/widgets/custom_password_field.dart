@@ -29,6 +29,13 @@ class _CustomPassFieldState extends State<CustomPassField> {
       decoration: InputDecoration(
         hintText: widget.hintText,
         prefixIcon: widget.prefixIcon,
+        labelStyle: TextStyle(
+      color: AppColors.greyColor,
+      fontSize: 16,
+      fontWeight: FontWeight.bold,
+    ),
+    fillColor: AppColors.accentColor,
+    filled: true,
         suffixIcon: IconButton(icon: Icon(Icons.remove_red_eye), onPressed: (){
           setState(() {
             obscureText = !obscureText;
@@ -37,19 +44,19 @@ class _CustomPassFieldState extends State<CustomPassField> {
         labelText: widget.labelText,
         enabledBorder: OutlineInputBorder(
           borderRadius: widget.borderRadius,
-          borderSide: BorderSide(color: AppColors.primaryColor),
+          borderSide: BorderSide.none,
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: widget.borderRadius,
-          borderSide: BorderSide(color: AppColors.primaryColor),
+           borderSide: BorderSide.none,
         ),
         errorBorder: OutlineInputBorder(
           borderRadius: widget.borderRadius,
-          borderSide: BorderSide(color: Colors.red),
+           borderSide: BorderSide.none,
         ),
         focusedErrorBorder: OutlineInputBorder(
           borderRadius: widget.borderRadius,
-          borderSide: BorderSide(color: Colors.red),
+           borderSide: BorderSide.none,
         ),
       ),
     );
